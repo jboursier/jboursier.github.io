@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeanne Boursier's Homepage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --link: #0645ad;
+    --rule: #d8d8d8;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--text);
+    background: var(--bg);
+    max-width: 780px;
+    margin: 48px auto 96px;
+    padding: 0 24px;
+  }
+  h1 {
+    font-size: 2.4em;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.4em;
+  }
+  h2 {
+    font-size: 1.35em;
+    font-weight: 500;
+    margin: 2em 0 0.6em;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0.6em 0; }
+  a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+
+  .profile-pic {
+    float: right;
+    width: 170px;
+    height: auto;
+    margin: 6px 0 12px 24px;
+    border-radius: 2px;
+  }
+
+  ol.papers {
+    padding-left: 1.4em;
+    margin: 0.6em 0;
+  }
+  ol.papers li {
+    margin-bottom: 0.9em;
+    padding-left: 0.2em;
+  }
+  .paper-title { font-weight: 700; }
+  .venue {
+    font-style: italic;
+    color: var(--muted);
+  }
+
+  ul.entries {
+    list-style: none;
+    padding: 0;
+    margin: 0.6em 0;
+  }
+  ul.entries li {
+    display: flex;
+    gap: 14px;
+    padding: 3px 0;
+  }
+  ul.entries .date {
+    flex: 0 0 135px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  ul.entries .descr { flex: 1; }
+
+  footer {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9em;
+  }
+
+  @media (max-width: 560px) {
+    body { font-size: 18px; margin-top: 28px; }
+    h1 { font-size: 2em; }
+    .profile-pic {
+      float: none;
+      display: block;
+      margin: 0 0 18px;
+      width: 140px;
+    }
+    ul.entries li { flex-direction: column; gap: 2px; }
+    ul.entries .date { flex: none; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Jeanne Boursier</h1>
+
+<img src="img.jpg" alt="Jeanne Boursier" class="profile-pic">
+
+<p>Email: <a href="mailto:jb4893@columbia.edu">jb4893@columbia.edu</a></p>
+
+<p>
+  I am a Ritt Assistant Professor (postdoc) in the Mathematics Department at Columbia University.
+  Prior to that I spent a year at ENS Lyon working with
+  <a href="https://perso.ens-lyon.fr/aguionne/">Alice Guionnet</a>.
+  I graduated in November 2022 from Université Paris-Dauphine, where I did my PhD under the co-supervision of
+  <a href="https://djalil.chafai.net/wiki/">Djalil Chafaï</a> (Université Paris-Dauphine) and
+  <a href="https://math.nyu.edu/~serfaty/">Sylvia Serfaty</a> (New York University).
+</p>
+
+<p>
+  My research lies in probability theory with a special focus on statistical physics.
+  I am currently interested in Coulomb gases and the Kosterlitz–Thouless phase transition,
+  spin glasses, random matrices, and renormalization.
+</p>
+
+<p>Here is a brief <a href="cv.pdf">CV</a>.</p>
+
+<h2>Publications and preprints</h2>
+
+<ol class="papers">
+  <li>
+    <span class="paper-title"><a href="https://arxiv.org/abs/2107.14452">Universal cutoff for the Dyson Ornstein–Uhlenbeck process</a></span>,
+    with Djalil Chafaï and Cyril Labbé.<br>
+    <span class="venue">Probability Theory and Related Fields (2023)</span>
+  </li>
+  <li>
+    <span class="paper-title"><a href="https://arxiv.org/abs/2112.05881">Optimal local laws and CLT for the 1D long-range Riesz gas</a></span>.<br>
+    <span class="venue">In revision at Annals of Probability</span>
+  </li>
+  <li>
+    <span class="paper-title"><a href="https://arxiv.org/abs/2209.00396">Thermodynamic limit and decay of correlations for the circular long-range Riesz gas</a></span>.<br>
+    <span class="venue">In revision at Probability and Mathematical Physics</span>
+  </li>
+  <li>
+    <span class="paper-title"><a href="https://arxiv.org/abs/2408.09256">Large deviations for the smallest eigenvalue of a deformed GOE with an outlier</a></span>,
+    with Alice Guionnet.<br>
+    <span class="venue">In revision at Annales de l'Institut Henri Poincaré</span>
+  </li>
+  <li>
+    <span class="paper-title"><a href="https://arxiv.org/abs/2410.01025">Dipole formation in the two-component plasma</a></span>,
+    with Sylvia Serfaty.<br>
+    <span class="venue">In revision at Communications on Pure and Applied Mathematics</span>
+  </li>
+  <li>
+    <span class="paper-title"><a href="https://arxiv.org/abs/2509.09449">Multipole and Berezinskii–Kosterlitz–Thouless transitions in the two-component plasma</a></span>,
+    with Sylvia Serfaty.<br>
+    <span class="venue">arXiv preprint (2025)</span>
+  </li>
+  <li>
+    <span class="paper-title">Supersymmetry and the quenched complexity of the TAP free energy</span>.<br>
+    <span class="venue">Coming soon</span>
+  </li>
+  <li>
+    <span class="paper-title">Choosing is losing and the glass problem</span>.<br>
+    <span class="venue">In preparation</span>
+  </li>
+</ol>
+
+<h2>Talks</h2>
+<ul class="entries">
+  <li><span class="date">April 2026</span><span class="descr">Finger Lakes Probability seminar</span></li>
+  <li><span class="date">April 2026</span><span class="descr">Duke Probability seminar</span></li>
+  <li><span class="date">April 2026</span><span class="descr">Probability seminar, University of Chicago</span></li>
+  <li><span class="date">February 2026</span><span class="descr">Cornell Probability seminar</span></li>
+  <li><span class="date">December 2025</span><span class="descr">Applied Mathematics colloquium, Brown University</span></li>
+  <li><span class="date">December 2025</span><span class="descr">Mathematics colloquium, Indiana University Bloomington</span></li>
+  <li><span class="date">December 2025</span><span class="descr">Mini-course, conference &ldquo;Topological phase transition and localization of random fields,&rdquo; University of Chile</span></li>
+  <li><span class="date">April 2025</span><span class="descr">NYU Courant Probability seminar</span></li>
+  <li><span class="date">November 2024</span><span class="descr">Princeton Probability seminar</span></li>
+  <li><span class="date">October 2024</span><span class="descr">Temple–UPenn Probability seminar</span></li>
+  <li><span class="date">October 2024</span><span class="descr">CRM–ISM Probability seminar, Montreal</span></li>
+  <li><span class="date">September 2024</span><span class="descr">Columbia Probability seminar</span></li>
+  <li><span class="date">August 2024</span><span class="descr">Bernoulli–IMS Congress in Probability and Statistics, session on random matrices and applications</span></li>
+  <li><span class="date">March 2023</span><span class="descr">Probability seminar, Université Aix-Marseille</span></li>
+  <li><span class="date">February 2023</span><span class="descr">Conference &ldquo;Hyperuniform structures, rigid point processes and related topics,&rdquo; Université de Lille</span></li>
+  <li><span class="date">January 2023</span><span class="descr">Probability seminar, Université Grenoble Alpes</span></li>
+  <li><span class="date">January 2023</span><span class="descr">Working group in stochastic modeling, LPSM, Sorbonne Université</span></li>
+  <li><span class="date">December 2022</span><span class="descr">Conference on <a href="https://coulomb.sciencesconf.org/">Coulomb gases and universality</a>, Institut Henri Poincaré</span></li>
+  <li><span class="date">November 2022</span><span class="descr">Workshop Journées EFI, Université Lyon 1</span></li>
+  <li><span class="date">September 2022</span><span class="descr">Working group LDRAM, ENS Lyon</span></li>
+  <li><span class="date">May 2022</span><span class="descr">Probability seminar, Université Rennes 1</span></li>
+  <li><span class="date">April 2022</span><span class="descr">Probability seminar, Université Paris-Saclay</span></li>
+  <li><span class="date">April 2022</span><span class="descr">Séminaire MEGA, Institut Henri Poincaré</span></li>
+  <li><span class="date">March 2022</span><span class="descr">Probability seminar &ldquo;Les probas du vendredi,&rdquo; LPSM, Sorbonne Université</span></li>
+  <li><span class="date">January 2022</span><span class="descr">Working group in probability, Université de Lille</span></li>
+  <li><span class="date">May 2021</span><span class="descr">SMAI young researchers project (BOUM, point processes), Université de Paris</span></li>
+</ul>
+
+<h2>Teaching</h2>
+<ul class="entries">
+  <li><span class="date">Spring 2026</span><span class="descr">Ordinary Differential Equations, Columbia University</span></li>
+  <li><span class="date">Fall 2025</span><span class="descr">Introduction to Modern Analysis II, Columbia University</span></li>
+  <li><span class="date">Spring 2025</span><span class="descr">Honors Math B, Columbia University</span></li>
+  <li><span class="date">Fall 2024</span><span class="descr">Ordinary Differential Equations, Columbia University</span></li>
+  <li><span class="date">Spring 2024</span><span class="descr">Calculus 3, Columbia University</span></li>
+  <li><span class="date">Fall 2023</span><span class="descr">Ordinary Differential Equations, Columbia University</span></li>
+  <li><span class="date">2021–2022</span><span class="descr">Teaching assistant in Analysis, Université Paris-Dauphine</span></li>
+  <li><span class="date">2020–2021</span><span class="descr">Teaching assistant in Optimization, Université Paris-Dauphine</span></li>
+  <li><span class="date">2019–2021</span><span class="descr">Teaching assistant in Probability, Université Paris-Dauphine</span></li>
+</ul>
+
+<footer>
+  <p>Department of Mathematics, Columbia University, New York.</p>
+</footer>
+
+</body>
+</html>
